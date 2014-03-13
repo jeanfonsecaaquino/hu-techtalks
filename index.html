@@ -1,4 +1,4 @@
-<html lang="pt-br">
+'<html lang="pt-br">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,7 +70,7 @@
             <p>Venha trocar uma ideia com eles e com os palestrantes convidados,
             fazer networking e participar do primeiro <strong>HU / Tech-Talks</strong> -
             Um dia que vai dar o que falar!</p>
-            <button type="button" class="btn btn-warning">Inscreva-se já!</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#registerModal">Inscreva-se já!</button>
           </div>
         </div>
       </div>
@@ -238,66 +238,117 @@
       </div>
     </div>
 
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){$('#registerModal').modal('hide');$('#successModal').modal('show');}"></iframe>
+
+
+
     <div class="bs-component">
+
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="successModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      
+      <div class="modal-body">
+        <h3>A Inscrição foi realizada com sucesso.</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
       <div class="modal fade" id="registerModal">
-        <div class="modal-dialog">
+        <div class="modal-dialog" style="width: 850px;">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <h4 class="modal-title">Inscrição</h4>
             </div>
             <div class="modal-body">
-              <form>
-                <legend>O evento oferece 100 vagas na plateia. Aproveite que você está aqui e inscreva-se gratuitamente!</legend>
-                <!-- Nome -->
-                <div class="form-group">
-                  <label class="col-lg-2 control-label" for="inputNome">Nome completo</label>
-                  <div class="col-lg-10">
-                    <input type="text" placeholder="Nome completo" id="inputNome" class="form-control" name="nome" />
+
+              <form action="https://docs.google.com/a/hotelurbano.com.br/forms/d/1MlVxL204Yoww86fU0JjKfYPZyuQ_GCkf3OlOl9XLlTQ/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;" class="" >
+
+                <div class="row">
+                  <div class="col-xs-12 form-group">
+                      <input type="text" name="entry.1721024040" value="" class="form-control" id="entry_1721024040" dir="auto" aria-label="Nome completo  " 
+                      title="" placeholder="Nome completo">
                   </div>
                 </div>
-                <!-- tipo -->
-                <div class="form-group">
-                  <div class="col-lg-10">
-                    <div class="radio">
-                      <label>
-                        <input type="radio" checked="" value="option1" id="optionsRadios1" name="tipo">
-                        Estudante
-                      </label>
+
+                <div class="row">
+                  <div class="col-xs-12 form-group">
+                    <input type="text" name="entry.1601584164" value="" class="form-control" id="entry_1601584164" dir="auto" aria-label="Email  " title="" placeholder="Email">
+                  </div>
+                </div>
+
+                <div class="row">
+                      <div class="col-xs-2 form-group">
+                        <label>
+                          <input type="radio" name="entry.93769113" value="Estudante" id="group_93769113_1" role="checkbox">
+                          Estudante
+                        </label>
+                      </div>
+                      <div class="col-xs-10 form-group">
+                        <label>
+                          <input type="radio" name="entry.93769113" value="Profissional" id="group_93769113_2" role="checkbox" >
+                          Profissional
+                        </label>
+                      </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6 form-group">
+                      <input type="text" name="entry.184509898" value="" class="form-control" id="entry_184509898" dir="auto" aria-label="RG  " 
+                      title="" placeholder="RG">
                     </div>
-                    <div class="radio">
-                      <label>
-                        <input type="radio" value="option2" id="optionsRadios2" name="tipo">
-                        Profissional
-                      </label>
+                    <div class="col-xs-6 form-group">
+                      <input type="date" name="entry.950994615" value="" class="form-control" dir="auto" id="entry_950994615" 
+                      aria-label="Data de nascimento" placeholder="Data de nascimento">
                     </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 form-group">
+                    <input type="text" name="entry.1141575499" value="" class="form-control" id="entry_1141575499" dir="auto" aria-label="Empresa onde estuda ou trabalha  " title="" placeholder="Empresa onde estuda ou trabalha">
                   </div>
                 </div>
-                <!-- RG -->
-                <div class="form-group">
-                  <label class="col-lg-2 control-label" for="inputRG">RG</label>
-                  <div class="col-lg-10">
-                    <input type="text" placeholder="RG" id="inputRG" class="form-control" name="rg" />
+
+                <div class="row">
+                  <div class="col-xs-8 form-group">
+                    <input type="text" name="entry.198719820" value="" class="form-control" id="entry_198719820" dir="auto" aria-label="Cidade  " title="" placeholder="Cidade">
+                  </div>
+                  <div class="col-xs-4 form-group">
+                    <input type="text" name="entry.822721718" value="" class="form-control valid" id="entry_822721718" dir="auto" aria-label="Estado  " title=""placeholder="Estado">
                   </div>
                 </div>
-                <!-- Nascimento -->
-                <div class="form-group">
-                  <label class="col-lg-2 control-label" for="inputDataNascimento">Data de Nascimento</label>
-                  <div class="col-lg-10">
-                    <input type="text" placeholder="Data de Nascimento" id="inputDataNascimento" class="form-control" name="nascimento" />
+
+                <div class="row">
+                  <div class="col-xs-12">
+                  <div class="form-group">
+                    <input type="text" name="entry.534361666" value="" class="form-control" id="entry_534361666" dir="auto" aria-label="Telefone para contato  " title="" placeholder="Telefone para contato">
                   </div>
-                </div>
-                <!-- Empresa onde estuda e/ou trabalha -->
-                <div class="form-group">
-                  <label class="col-lg-2 control-label" for="inputInstituicao">Empresa onde estuda e/ou trabalha</label>
-                  <div class="col-lg-10">
-                    <input type="text" placeholder="Empresa onde estuda e/ou trabalha" id="inputInstituicao" class="form-control" name="instituicao" />
                   </div>
-                </div>
-              </form>
+                </div>                  
+
+                  
+                <input type="hidden" name="draftResponse" value="[,,&quot;2853297978061666199&quot;]
+                ">
+                <input type="hidden" name="pageHistory" value="0">
+                <input type="hidden" name="fromEmail" value="false">
+
+                <input type="hidden" name="fbzx" value="2853297978061666199">
+                <input type="submit" name="submit" value="Enviar" id="ss-submit" style="display:none;">
+
+            </form>
+
+
+
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#registerModal" >Inscreva-se já!</button>
+              <button type="button" class="btn btn-warning" onclick="$('#ss-submit').click();" >Enviar</button>
             </div>
           </div>
         </div>
@@ -319,6 +370,11 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <div id="fb-root"></div>
+
+    <script>
+
+    </script>
+
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -326,5 +382,11 @@
       js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script type="text/javascript" src="https://docs.google.com/static/forms/client/js/4022864555-formviewer_prd__pt_br.js"></script>
+    <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));_initFormViewer(
+        "[100,\x22#CCC\x22,[]\n]\n");
+    </script>
+
   </body>
-</html>
+</html>'
