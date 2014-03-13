@@ -59,4 +59,18 @@ body {
 .cus-github{ background-position: 0 -35px; width: 32px; height: 32px; } 
 .cus-hu{ background-position: 0 -69px; width: 40px; height: 22px; } 
 .cus-open{ background-position: 0 -93px; width: 33px; height: 33px; } 
-.cus-linkedin{ background-position: 0 -128px; width: 32px; height: 32px; } 
+.cus-linkedin{ background-position: 0 -128px; width: 32px; height: 32px; }
+
+.google-maps {
+       position: relative;
+       padding-bottom: 75%; // This is the aspect ratio
+       height: 0;
+       overflow: hidden;
+   }
+   .google-maps iframe {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100% !important;
+       height: 100% !important;
+   }
