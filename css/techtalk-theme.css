@@ -24,6 +24,7 @@
 }
 
 body {
+  font-family: 'Lato', sans-serif;
   background-image: url("../images/fundo.jpg");
   background-repeat: no-repeat;
   background-position: center 20px;
@@ -32,3 +33,30 @@ body {
 .bs-component li div:first-child {
     width: 50%;
 }
+
+.sprite{background: url(../images/icons.png) no-repeat top left;}
+
+
+/* icons */
+[class^="cus-"],
+[class*=" cus-"] {
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url(../images/icons.png);
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+[class^="cus-"]:last-child,
+[class*=" cus-"]:last-child {
+  *margin-left: 0;
+}
+
+.cus-close{ background-position: 0 0; width: 33px; height: 33px; } 
+.cus-github{ background-position: 0 -35px; width: 32px; height: 32px; } 
+.cus-hu{ background-position: 0 -69px; width: 40px; height: 22px; } 
+.cus-open{ background-position: 0 -93px; width: 33px; height: 33px; } 
+.cus-linkedin{ background-position: 0 -128px; width: 32px; height: 32px; } 
