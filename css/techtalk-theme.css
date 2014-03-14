@@ -98,12 +98,11 @@ body {
 .font18, .row{font-size: 18px;}
 .text-warning, a.text-warning:hover{color: #ea7f1e;}
 h1, h2{font-size: 32px; margin-top: 50px;}
-.row{margin: 40px -15px;}
 .linha{border-bottom: 1px solid #003964; width: 100%; float: left; position: absolute; top: 15px;}
-.row .col-xs-3{overflow: hidden;}
-	.row .col-xs-3 strong{background: #fff; padding-right: 15px; position: relative; float: left; z-index: 1;}
-	
-.row .col-xs-6{max-width: 370px;}
+#evento .row{margin: 40px -15px;}
+#evento .row .col-xs-3{overflow: hidden;}
+#evento .row .col-xs-3 strong{background: #fff; padding-right: 15px; position: relative; float: left; z-index: 1;}
+#evento .row .col-xs-6{max-width: 370px;}
 
 .detail{width: 700px; position: relative;}
 .detail .linha{width: 250px; position: static;}
