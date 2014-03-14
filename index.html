@@ -42,9 +42,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav light font18">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#evento">Evento</a></li>
-            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#sobre" id="linkSobre">Sobre</a></li>
+            <li><a href="#evento" id="linkEvento">Evento</a></li>
+            <li><a href="#mapa" id="linkMapa">Mapa</a></li>
             <li><a href="#inscricao" data-toggle="modal" data-target="#registerModal">Inscrição</a></li>
             
           </ul>
@@ -477,6 +477,14 @@
             $(this).addClass('cus-open').removeClass('cus-close').parents('.row').find('.detail').hide('slideUp');
         }
     });
+    $('#linkSobre, #linkEvento, #linkMapa').click(function() {
+        $('html,body').animate({
+            scrollTop: $('#'+$(this).attr('href').substring(1)).offset().top
+            },'slow'
+        );
+        return false;
+    });
+
       var init = function(){
         $('#entry_950994615').mask('99/99/9999');
       }
