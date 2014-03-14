@@ -9,10 +9,7 @@
 */
 
 
-/* Override do TopMenu */
-.navbar-nav li a:hover{
-    border-bottom: 2px solid orange;
-}
+
 
 /* Override Facebook LikeButton */
 .fb-like {
@@ -25,9 +22,12 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-image: url("../images/fundo.jpg");
-  background-repeat: no-repeat;
-  background-position: center 20px;
+  color: #003964;
+}
+
+#sobre {
+  height:860px;
+  background: url("../images/fundo.jpg") no-repeat center 170px;
 }
 
 .bs-component li div:first-child {
@@ -55,17 +55,18 @@ body {
   *margin-left: 0;
 }
 
-.cus-close{ background-position: 0 0; width: 33px; height: 33px; } 
-.cus-github{ background-position: 0 -35px; width: 32px; height: 32px; } 
+.cus-close{ background-position: 0 0; width: 33px; height: 33px; cursor: pointer} 
+.cus-github{ background-position: 0 -35px; width: 33px; height: 31px; } 
 .cus-hu{ background-position: 0 -69px; width: 40px; height: 22px; } 
-.cus-open{ background-position: 0 -93px; width: 33px; height: 33px; } 
-.cus-linkedin{ background-position: 0 -128px; width: 32px; height: 32px; }
+.cus-open{ background-position: 0 -93px; width: 33px; height: 33px; cursor: pointer;} 
+.cus-linkedin{ background-position: 0 -128px; width: 33px; height: 31px; }
 
 .google-maps {
        position: relative;
-       padding-bottom: 75%; // This is the aspect ratio
+       padding-bottom: 75%; /*This is the aspect ratio*/
        height: 0;
        overflow: hidden;
+	   margin: 144px 0 50px 0;
    }
    .google-maps iframe {
        position: absolute;
@@ -74,3 +75,53 @@ body {
        width: 100% !important;
        height: 100% !important;
    }
+
+/* PAT */
+.container{padding: 0;}
+.light{font-weight: 300;}
+
+/* HEADER */
+.navbar-default{background: #fff; border: none; /*box-shadow: 0 2px 4px #ccc;*/}
+.navbar-brand{height: auto;}
+.navbar-nav{margin: 60px 0 0 40px;}
+.navbar-default .navbar-nav > li > a{color: #003964; padding: 10px 0; margin: 0 15px;}
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{color: #003964;}	
+	/* Override do TopMenu */
+	.navbar-nav li a:hover{border-bottom: 1px solid orange;}
+	
+.btn-warning{font-size:32px;background-color:#EA7F1E;padding:0 50px;}
+
+#sobre .container .row-fluid{z-index:10;position: absolute;top: 170;width:580px;height:415px}
+#sobre .container .row-fluid p{padding: 37px 0;}
+
+/* CONTENT */
+.font18, .row{font-size: 18px;}
+.text-warning, a.text-warning:hover{color: #ea7f1e;}
+h1, h2{font-size: 32px; margin-top: 50px;}
+.row{margin: 40px -15px;}
+.linha{border-bottom: 1px solid #003964; width: 100%; float: left; position: absolute; top: 15px;}
+.row .col-xs-3{overflow: hidden;}
+	.row .col-xs-3 strong{background: #fff; padding-right: 15px; position: relative; float: left; z-index: 1;}
+	
+.row .col-xs-6{max-width: 370px;}
+
+.detail{width: 700px; position: relative;}
+.detail .linha{width: 250px; position: static;}
+.detail p.palestrante{clear: both; float: left; margin: 15px 10px 15px 0;}
+.detail a{margin: 12px 5px 0; float: left;}
+.col-xs-1 .duas-linhas{margin-top: 12px;} /* quando o título da palestra tiver 2 linhas */
+
+#mapa .fundo{background: #fcc238;}
+#mapa h2, #mapa p{color: #fff;}
+#mapa h2{margin-bottom: 20px;}
+#mapa .col-md-8{margin-top: 40px;}
+
+/* FOOTER */
+footer{margin: 20px 0;}
+footer .row-fluid .col-md-4.first{margin-top: 38px;}
+footer .row-fluid .col-md-4.last{margin-top: 25px;}
+
+/* ANCORAS */
+#sobre{margin-bottom:-150px;}
+#evento{padding-top: 150px;margin-bottom:-150px;}
+#mapa{padding-top: 150px;}
