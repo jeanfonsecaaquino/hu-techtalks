@@ -5,11 +5,9 @@
 * Authors:
 *           Vitor Mattos
 *           Luiz Eduardo Le Masson
+*           Patricia Evora
 *     
 */
-
-
-
 
 /* Override Facebook LikeButton */
 .fb-like {
@@ -28,6 +26,7 @@ body {
 #sobre {
   height:860px;
   background: url("../images/fundo.jpg") no-repeat center 170px;
+  background-size: cover;
 }
 
 .bs-component li div:first-child {
@@ -96,7 +95,8 @@ h1, h2{font-size: 32px; margin-top: 50px;}
 .detail .col-xs-12 {overflow: none;}
 .col-xs-1 .duas-linhas{margin-top: 12px;} /* quando o título da palestra tiver 2 linhas */
 
-#mapa .fundo{background: #fcc238;}
+#mapa{background: url(../images/fundo.jpg) no-repeat center 150px; background-size: cover;}
+#mapa .fundo{background: rgba(252, 194, 56, 0.7);}
 #mapa h2, #mapa p{color: #fff;}
 #mapa h2{margin-bottom: 20px;}
 #mapa .col-md-8{margin-top: 40px;}
@@ -126,5 +126,67 @@ footer .row-fluid>div.last{margin-top: 25px;}
 
 /* ANCORAS */
 #sobre{margin-bottom:-150px;}
-#evento{padding-top: 150px;margin-bottom:-150px;}
+#evento{padding-top: 150px; margin-bottom:-150px;}
 #mapa{padding-top: 150px;}
+
+/* LIGHTBOX */
+#registerModal h1{color: #ea7f1e;}
+.modal-header, .modal-body, .modal-footer{padding: 0;}
+.modal-header{border-bottom: none;}
+.modal-header p.font18{margin-top: 20px;}
+.modal-content{padding: 35px 50px; position: relative;}
+
+.modal-content ul.profissao{list-style: none; margin: 0 0 15px 0; padding: 0 15px;}
+.modal-content ul.profissao:after{content: ""; clear: both;}
+.modal-content li.qualProfissao{box-sizing: border-box; float: left; height: 34px; position: relative; width: 34px;}
+.modal-content li.qualProfissao + .qualProfissao{margin-left: 95px;}
+.modal-content li.qualProfissao label{
+  background: #efeeed no-repeat center center;
+  bottom: 0; left: 0; right: 0; top: 0;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  text-indent: 100%;
+  white-space: nowrap;
+  margin: 0;
+}
+.modal-content li.qualProfissao label span{margin: 3px 0 0 5px; float: left;}
+/*
+.modal-content ul.profissao input:checked + label:after{
+  background: url(../images/opcao-escolhida.png);
+  bottom: -10px;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  right: -10px;
+  width: 20px;
+}
+*/
+.modal-content ul.profissao input:focus + label {outline: 2px dotted #21b4d0;}
+.modal-content ul.profissao input:checked + label {outline: 4px solid #21b4d0;}
+
+.modal-body{margin-top: 40px;}
+.modal-body label{font-weight: 300; float: left; padding: 0;}
+.modal-body input.form-control{float: left; background: #efeeed; border: none; box-shadow: none; border-radius: 0; font-weight: 300; font-size: 18px;}
+.modal-body select{
+	-moz-appearance: none;
+    background: url(../images/seta-select.png) no-repeat scroll 97% 50% #efeeed;
+    box-shadow: none;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+    height: 35px;
+    padding-left: 5px;
+    text-indent: 0.01px;
+    text-overflow: "";
+    width: 60px;
+	font-weight: 300;
+	font-size: 18px;
+}
+.modal-body select.cidade{width: 83%;}
+.modal-body select.estado{width: 75%;}
+.form-control:focus{box-shadow: none;}
+.modal-footer{border-top: none;}
+
+.close{font-weight: 100; font-size: 150px; color: #fff; position: absolute; top: -50px; right: -87px; opacity: 1; text-shadow: none;}

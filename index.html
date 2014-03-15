@@ -14,7 +14,7 @@
     <!-- HU Tech Talk Theme -->
     <link href="./css/techtalk-theme.css" rel="stylesheet">
 
-	<link href="http://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet"type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,300,700,100" rel="stylesheet"type="text/css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -446,6 +446,7 @@
   </div>
 
 
+
     <div class="bs-component">
 
 	<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="successModal">
@@ -455,6 +456,12 @@
 		  
 		  <div class="modal-body">
 			<h3>A Inscrição foi realizada com sucesso.</h3>
+			<div class="row">
+				<div class="col-xs-12">
+					Aguarde que enviaremos em breve um email para você confirmando sua inscrição
+				</div>
+			</div>
+		  </div>
 		  </div>
 		  <div class="modal-footer">
 			<button type="button" onclick="clearForm();" class="btn btn-success" data-dismiss="modal">OK</button>
@@ -468,30 +475,37 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h1 class="modal-title">Inscrição</h1>
+              <h1 class="modal-title"><strong>Inscrição</strong></h1>
+			  <p class="font18">O Evento oferece 100 vagas na plateia. Aproveite que você está aqui e inscreva-se!</p>
             </div>
             <div class="modal-body">
-
               <form action="https://docs.google.com/a/hotelurbano.com.br/forms/d/1MlVxL204Yoww86fU0JjKfYPZyuQ_GCkf3OlOl9XLlTQ/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;" class="" >
 
                 <div class="row">
                   <div class="col-xs-12 form-group">
-                      <input type="text" name="entry.1721024040" value="" class="form-control" id="entry_1721024040" dir="auto" aria-label="Nome completo  " 
-                      title="" placeholder="Nome completo">
-                      <span class="form-control-feedback"></span>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-xs-12 form-group">
-                    <input type="text" name="entry.1601584164" value="" class="form-control" id="entry_1601584164" dir="auto" aria-label="Email  " title="" placeholder="Email">
+					<label class="col-md-3">Nome Completo</label>
+                    <input type="text" name="entry.1721024040" value="" class="form-control col-md-9" id="entry_1721024040" dir="auto" title="" />
                     <span class="form-control-feedback"></span>
                   </div>
                 </div>
+				
+                      <!--				
+				<div class="row">
+					<ul class="profissao col-xs-4 form-group">
+						<li class="qualProfissao estudante">
+							<input type="radio" name="entry.93769113" value="Estudante" id="group_93769113_1" role="checkbox" class="ss-q-checkbox">
+							<label><span>Estudante</span></label>
+						</li>
+						<li class="qualProfissao profissional">
+							<input type="radio" name="entry.93769113" value="Profissional" id="group_93769113_2" role="checkbox" class="ss-q-checkbox">
+							<label><span>Profissional</span></label>
+						</li>
+					</ul>
+				
+				
 
-                <div class="row">
-                      <div class="col-xs-2 form-group">
-                        <label>
+					  <div class="col-xs-2 form-group">
+                        <label class="estud-prof">
                           <input type="radio" name="entry.93769113" value="Estudante" id="group_93769113_1" role="checkbox" class="ss-q-checkbox">
                           Estudante
                         </label>
@@ -503,48 +517,102 @@
                         </label>
                       </div>
                 </div>
-
-                <div class="row">
+				<div class="row">
                     <div class="col-xs-6 form-group">
-                      <input type="text" name="entry.184509898" value="" class="form-control" id="entry_184509898" dir="auto" aria-label="RG  " 
-                      title="" placeholder="RG">
+					  <label class="col-md-1">RG</label>
+                      <input type="text" name="entry.184509898" value="" class="form-control col-md-11 radioButton" id="entry_184509898" dir="auto" title="" />
                     </div>
                     <div class="col-xs-6 form-group">
-                      <input type="text" name="entry.950994615" value="" class="form-control" id="entry_950994615" dir="auto" aria-label="Data de nascimento  " title="" placeholder="Data de nascimento">
+					  <label class="col-md-6">Data de Nascimento</label>
+                      <input type="text" name="entry.950994615" value="" class="form-control col-md-6 radioButton" id="entry_950994615" dir="auto" title="" />
                     </div>
-                </div>
-
+                </div>->
+-->
                 <div class="row">
                   <div class="col-xs-12 form-group">
-                    <input type="text" name="entry.1141575499" value="" class="form-control" id="entry_1141575499" dir="auto" aria-label="Empresa onde estuda ou trabalha  " title="" placeholder="Empresa onde estuda ou trabalha">
+					<label class="col-md-1">Email</label>
+                    <input type="text" name="entry.1601584164" value="" class="form-control col-md-11" id="entry_1601584164" dir="auto" title="" />
+                    <span class="form-control-feedback"></span>
+                  </div>
+                </div>
+
+                <!--<div class="row">
+                  <div class="col-xs-12 form-group">
+				    <label class="col-md-4">Empresa onde estuda / trabalha</label>
+                    <input type="text" name="entry.1141575499" value="" class="form-control col-md-8" id="entry_1141575499" dir="auto" title="" />
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-xs-8 form-group">
-                    <input type="text" name="entry.198719820" value="" class="form-control" id="entry_198719820" dir="auto" aria-label="Cidade  " title="" placeholder="Cidade">
+					<label class="col-md-2">Cidade</label>
+                    <select name="entry.198719820" class="cidade form-control col-md-10" id="entry_198719820" dir="auto" title="">
+						<option value="4499">Belém</option>
+						<option value="2700">Belo Horizonte</option>
+						<option value="4070">Bonito</option>
+						<option value="1724">Brasilia</option>
+						<option value="8781">Campinas</option>
+						<option value="4079">Campo Grande</option>
+						<option value="4282">Cuiabá</option>
+						<option value="5915">Curitiba</option>
+						<option value="8213">Florianópolis</option>
+						<option value="1320">Fortaleza</option>
+						<option value="2120">Goiânia</option>
+						<option value="4895">João Pessoa</option>
+						<option value="107">Maceió</option>
+						<option value="240">Manaus</option>
+						<option value="7039">Natal</option>
+						<option value="9653">Palmas</option>
+						<option value="7777">Porto Alegre</option>
+						<option value="7170">Porto Velho</option>
+						<option value="5333">Recife</option>
+						<option value="16">Rio Branco</option>
+						<option value="6861">Rio de Janeiro</option>
+						<option value="981">Salvador</option>
+						<option value="2533">Sao Luis</option>
+						<option value="9422">São Paulo</option>
+					</select>
                   </div>
                   <div class="col-xs-4 form-group">
-                    <input type="text" name="entry.822721718" value="" class="form-control valid" id="entry_822721718" dir="auto" aria-label="Estado  " title=""placeholder="Estado">
+					<label class="col-md-3">Estado</label>
+                    <select name="entry.822721718" class="estado form-control valid col-md-9" id="entry_822721718" dir="auto" title="">
+						<option>AC</option>
+						<option>AL</option>
+						<option>AP</option>
+						<option>AM</option>
+						<option>BA</option>
+						
+						<option>CE</option>
+						<option>DF</option>
+						<option>ES</option>
+						<option>GO</option>
+						<option>MA</option>
+						
+						<option>MT</option>
+						<option>MS</option>
+						<option>MG</option>
+						<option>PA</option>
+						<option>PB</option>
+					</select>
                   </div>
-                </div>
+                </div>-->
 
                 <div class="row">
                   <div class="col-xs-12">
                   <div class="form-group">
-                    <input type="text" name="entry.534361666" value="" class="form-control" id="entry_534361666" dir="auto" aria-label="Telefone para contato  " title="" placeholder="Telefone para contato">
+					<label class="col-md-3">Telefone para contato</label>
+                    <input type="text" name="entry.534361666" value="" class="form-control col-md-9" id="entry_534361666" dir="auto"  title="" />
                   </div>
                   </div>
                 </div>                  
 
                   
-                <input type="hidden" name="draftResponse" value="[,,&quot;2853297978061666199&quot;]
-                ">
-                <input type="hidden" name="pageHistory" value="0">
-                <input type="hidden" name="fromEmail" value="false">
+                <input type="hidden" name="draftResponse" value="[,,&quot;2853297978061666199&quot;]" />
+                <input type="hidden" name="pageHistory" value="0" />
+                <input type="hidden" name="fromEmail" value="false" />
 
-                <input type="hidden" name="fbzx" value="2853297978061666199">
-                <input type="submit" name="submit" value="Enviar" id="ss-submit" style="display:none;">
+                <input type="hidden" name="fbzx" value="2853297978061666199" />
+                <input type="submit" name="submit" value="Enviar" id="ss-submit" style="display:none;" />
 
             </form>
 
@@ -552,7 +620,9 @@
 
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-warning" onclick="submitForm();" >Enviar</button>
+				<p class="text-center">
+					<button type="button" class="btn btn-warning light" onclick="submitForm();">Inscreva-se já!</button>
+				</p>
             </div>
           </div>
         </div>
