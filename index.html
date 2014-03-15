@@ -14,9 +14,6 @@
     <!-- HU Tech Talk Theme -->
     <link href="./css/techtalk-theme.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="navbar-fixed-top.css" rel="stylesheet">
-
 	<link href="http://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet"type="text/css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -49,28 +46,30 @@
             
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="350" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></li>
+            <li><div class="fb-like" data-href="http://techtalks.hotelurbano.com" data-width="350" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
-		<div class="row-fluid" id="sobre">
-			<div class="container">
-				<div class="row-fluid">
-					<h1>
-						<span class="text-warning"><strong>Os devs do Hotel Urbano</strong></span>
-						<span class="light">convidam você para um dia de tecnologia.</span>
-					</h1>
-					<p>Venha trocar uma ideia com eles e com os palestrantes convidados,
-					fazer networking e participar do primeiro <strong>HU / Tech-Talks</strong> -
-					Um dia que vai dar o que falar!</p>
-					<p class="text-center">
-						<button type="button" class="btn btn-warning light" data-toggle="modal" data-target="#registerModal">Inscreva-se já!</button>
-					</p>
-				</div>
-			</div>
+	<div class="row-fluid" id="sobre">
+		<div class="container">
+            <div class="row-fluid">
+			    <div class="col-xs-7">
+				    <h1>
+					    <span class="text-warning"><strong>Os devs do Hotel Urbano</strong></span>
+					    <span class="light">convidam você para um dia de tecnologia.</span>
+				    </h1>
+				    <p>Venha trocar uma ideia com eles e com os palestrantes convidados,
+				    fazer networking e participar do primeiro <strong>HU / Tech-Talks</strong> -
+				    Um dia que vai dar o que falar!</p>
+				    <p class="text-center">
+					    <button type="button" class="btn btn-warning light" data-toggle="modal" data-target="#registerModal">Inscreva-se já!</button>
+				    </p>
+			    </div>
+		    </div>
 		</div>
+	</div>
 
 	<div class="container" id="evento">
 	  <div class="bs-component">
@@ -82,19 +81,25 @@
 		Depois, as tech talks continuam no bar preferido da Equipe do HU.
 		</p>
 	  </div>
-	  <div class="bs-component">
+	  <div class="bs-component" id="programacao">
 		<h2 class="text-warning"><strong>Programação</strong></h2>
 		<!-- Palestrante -->
 		<div class="row">
-		  <div class="col-xs-3">
+		  <div class="col-xs-3 horario">
 			<strong>09h</strong>
 			<div class="linha"></div>
 		  </div>
-		  <div class="col-xs-6"><strong>Abertura</strong></div>
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>Abertura</strong>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-		  <div class="col-xs-3">
+		  <div class="col-xs-3 horario">
 			<strong>O dia todo!</strong>
 			<div class="linha"></div>
 		  </div>
@@ -102,221 +107,320 @@
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-			<div class="col-xs-3">
-				<strong>09h</strong>
-				<div class="linha"></div>
-			</div>
-			<div class="col-xs-6">
-				<strong>Abertura</strong>
-			</div>
-		</div>
-		<!-- Palestrante -->
-		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-xs-3 horario">
 				<strong>09:30h</strong>
 				<div class="linha"></div>
 			</div>
-			<div class="col-xs-6">
-				<strong>
-					O mercado de desenvolvimento mobile e o planejamento de um
-					projeto de aplicativo
-				</strong>
-				<div class="detail">
-					<p class="light">
-						Conheça mais sobre o mercado de trabalho que mais cresce no
-						Brasil e no mundo! Descubra como é realizado todo o trabalho 
-						de planejamento, criação e desenvolvimento dos aplicativos mobile. 
-						Let´s talk!
-					</p>
-					<div class="linha"></div>
-					<p class="palestrante">
-						<strong>Palestrante:</strong> <span class="light">Thiago Cortat</span>
-					</p>
-					<a href="https://github.com/thiagocortat" target="_blank"><i class="cus-github"></i></a>
-					<a href="http://www.linkedin.com/pub/thiago-cortat/26/aa4/ba9" target="_blank"><i class="cus-linkedin"></i></a>
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>
+							O mercado de desenvolvimento mobile e o planejamento de um
+							projeto de aplicativo
+						</strong>
+					</div>
+					<div class="col-xs-1">
+						<i class="show-more cus-open"></i>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-1 duas-linhas">
-				<i class="show-more cus-open"></i>
+				<div style="display: block;" class="row detail">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-12 light">
+								Conheça mais sobre o mercado de trabalho que mais cresce no
+								Brasil e no mundo! Descubra como é realizado todo o trabalho 
+								de planejamento, criação e desenvolvimento dos aplicativos mobile. 
+								Let´s talk!
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-5 linha"></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="palestrante">
+									<strong>Palestrante:</strong> <span class="light">Thiago Cortat</span>
+								</p>
+								<a href="https://github.com/thiagocortat" target="_blank"><i class="cus-github"></i></a>
+								<a href="http://www.linkedin.com/pub/thiago-cortat/26/aa4/ba9" target="_blank"><i class="cus-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-xs-3 horario">
 				<strong>10:30h</strong>
 				<div class="linha"></div>
 			</div>
-			<div class="col-xs-6">
-				<strong>Introdução ao AngularJS</strong>
-				<div class="detail">
-					<p class="light">
-						Veja nesta palestra como o AngularJS pode ajudar a melhorar a 
-						experiência num site e como este framework mvc facilita a 
-						utilização de ajaz e templates em javascript. Let´s Talk!
-					</p>
-					<div class="linha"></div>
-					<p class="palestrante">
-						<strong>Palestrante:</strong> <span class="light">Robson Ventura</span>
-					</p>
-					<a href="https://github.com/robsonvnt" target="_blank"><i class="cus-github"></i></a>
-					<a href="http://www.linkedin.com/pub/robson-ventura-rodrigues/18/a60/786" target="_blank"><i class="cus-linkedin"></i></a>
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>Introdução ao AngularJS</strong>
+					</div>
+					<div class="col-xs-1">
+						<i class="show-more cus-open"></i>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-1">
-				<i class="show-more cus-open"></i>
+				<div style="display: block;" class="row detail">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-12 light">
+								Veja nesta palestra como o AngularJS pode ajudar a melhorar a 
+								experiência num site e como este framework mvc facilita a 
+								utilização de ajaz e templates em javascript. Let´s Talk!
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-5 linha"></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="palestrante">
+									<strong>Palestrante:</strong> <span class="light">Robson Ventura</span>
+								</p>
+								<a href="https://github.com/robsonvnt" target="_blank"><i class="cus-github"></i></a>
+								<a href="http://www.linkedin.com/pub/robson-ventura-rodrigues/18/a60/786" target="_blank"><i class="cus-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-xs-3 horario">
 				<strong>11:30h</strong>
 				<div class="linha"></div>
 			</div>
-			<div class="col-xs-6">
-				<strong>Lightning Talks</strong>
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>Lightning Talks</strong>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-			<div class="col-xs-3">
-				<strong>12:00h</strong>
+			<div class="col-xs-3 horario">
+				<strong>12h</strong>
 				<div class="linha"></div>
 			</div>
-			<div class="col-xs-6">
-				<strong>Almoço</strong>
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>Intervalo para almoço</strong>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-xs-3 horario">
 				<strong>13h</strong>
 				<div class="linha"></div>
 			</div>
-			<div class="col-xs-6">
-				<strong>Sessão Interativa de TDD</strong>
-				<div class="detail">
-					<p class="light">
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>Sessão Interativa de TDD</strong>
+					</div>
+					<div class="col-xs-1">
+						<i class="show-more cus-open"></i>
+					</div>
+				</div>
+				<div style="display: block;" class="row detail">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-12 light">
 						Sessão de TDD, com um pedaço de software bem simples (completo e 
 						funcional) a fim de apresentar os conceitos e o ciclo como 
 						idealizado pelo Kent Beck: red, green e refactor. Acompanha 
-						um repositório com lição de casa para os participantes. 
-						Let´s talk!
-					</p>
-					<div class="linha"></div>
-					<p class="palestrante">
-						<strong>Palestrante:</strong> <span class="light">Augusto Pascutti (PHP SP)</span>
-					</p>
-					<a href="https://github.com/augustohp" target="_blank"><i class="cus-github"></i></a>
-					<a href="http://www.linkedin.com/in/augustopascutti" target="_blank"><i class="cus-linkedin"></i></a>
+						um repositório com lição de casa para os participantes.
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-5 linha"></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="palestrante">
+									<strong>Palestrante:</strong> <span class="light">Augusto Pascutti (PHP SP)</span>
+								</p>
+								<a href="https://github.com/augustohp" target="_blank"><i class="cus-github"></i></a>
+								<a href="http://www.linkedin.com/in/augustopascutti" target="_blank"><i class="cus-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-1">
-				<i class="show-more cus-open"></i>
 			</div>
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-xs-3 horario">
 				<strong>14h</strong>
 				<div class="linha"></div>
 			</div>
-			<div class="col-xs-6">
-				<strong>Sessão Interativa de TDD - parte 2</strong>
-				<div class="detail">
-					<p class="light">
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>Sessão Interativa de TDD - parte 2</strong>
+					</div>
+					<div class="col-xs-1">
+						<i class="show-more cus-open"></i>
+					</div>
+				</div>
+				<div style="display: block;" class="row detail">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-12 light">
 						Os dois palestrantes se unem para falar de TDD: Nelson Senna 
 						chega para contribuir com a palestra do Augusto Pascutti e 
 						desenvolver mais as nossas tech talks. 
 						Aproveite, pois a dose é dupla. 
 						Let´s talk!
-					</p>
-					<div class="linha"></div>
-					<p class="palestrante">
-						<strong>Palestrante 1:</strong> <span class="light">Augusto Pascutti (PHP SP)</span>
-					</p>
-					<a href="https://github.com/augustohp" target="_blank"><i class="cus-github"></i></a>
-					<a href="http://www.linkedin.com/in/augustopascutti" target="_blank"><i class="cus-linkedin"></i></a>
-					<p class="palestrante">
-						<strong>Palestrante 2:</strong> <span class="light">Nelson Senna (PHP SP)</span>
-					</p>
-					<a href="https://github.com/nelsonsar" target="_blank"><i class="cus-github"></i></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-5 linha"></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="palestrante">
+									<strong>Palestrante 1:</strong> <span class="light">Augusto Pascutti (PHP SP)</span>
+								</p>
+								<a href="https://github.com/augustohp" target="_blank"><i class="cus-github"></i></a>
+								<a href="http://www.linkedin.com/in/augustopascutti" target="_blank"><i class="cus-linkedin"></i></a>
+								<p class="palestrante">
+									<strong>Palestrante 2:</strong> <span class="light">Nelson Senna (PHP SP)</span>
+								</p>
+								<a href="https://github.com/nelsonsar" target="_blank"><i class="cus-github"></i></a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-1">
-				<i class="show-more cus-open"></i>
 			</div>
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-xs-3 horario">
 				<strong>15h</strong>
 				<div class="linha"></div>
 			</div>
-			<div class="col-xs-6">
-				<strong>Coffe Break</strong>
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>Coffe Break</strong>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-			<div class="col-xs-3">
-				<strong>15:30</strong>
+			<div class="col-xs-3 horario">
+				<strong>15:30h</strong>
 				<div class="linha"></div>
 			</div>
-			<div class="col-xs-6">
-				<strong>Lightning Talks</strong>
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>Lightning Talks</strong>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-xs-3 horario">
 				<strong>16h</strong>
 				<div class="linha"></div>
 			</div>
-			<div class="col-xs-6">
-				<strong>Micro Frameworks e Micro Escolhas</strong>
-				<div class="detail">
-					<p class="light">
-						Framewoks menores levaram a processos de desenvolvimento que se 
-						adaptam ao andamento de cada projeto e são modulares por natureza.
-						A palestra fala sobre temas e escolhas que um programador pode 
-						fazer nessa abordagem.
-					</p>
-					<div class="linha"></div>
-					<p class="palestrante">
-						<strong>Palestrante:</strong> <span class="light">Alexandre Gaigalas (PHP SP)</span>
-					</p>
-					<a href="https://github.com/alganet" target="_blank"><i class="cus-github"></i></a>
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>Micro Frameworks e Micro Escolhas</strong>
+					</div>
+					<div class="col-xs-1">
+						<i class="show-more cus-open"></i>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-1">
-				<i class="show-more cus-open"></i>
+				<div style="display: block;" class="row detail">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-12 light">
+								Framewoks menores levaram a processos de desenvolvimento que se 
+								adaptam ao andamento de cada projeto e são modulares por natureza.
+								A palestra fala sobre temas e escolhas que um programador pode 
+								fazer nessa abordagem.
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-5 linha"></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="palestrante">
+									<strong>Palestrante:</strong> <span class="light">Alexandre Gaigalas (PHP SP)</span>
+								</p>
+								<a href="https://github.com/alganet" target="_blank"><i class="cus-github"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Palestrante -->
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-xs-3 horario">
 				<strong>17h</strong>
 				<div class="linha"></div>
 			</div>
-			<div class="col-xs-6">
-				<strong>Porque usar um sistema de controle de versão distribuído como GIT?</strong>
-				<div class="detail">
-					<p class="light">
-						Veja as vantagens do uso de uma ferramenta de controle de versão 
-						distribuído em relação às outras. Vamos falar sobre a opção mais 
-						conhecida no mercado e as boas práticas de como desenvolver no 
-						dia-a-dia de um projeto. Let´s talk!
-					</p>
-					<div class="linha"></div>
-					<p class="palestrante">
-						<strong>Palestrante:</strong> <span class="light">Robson Ventura</span>
-					</p>
-					<a href="https://github.com/williammizuta" target="_blank"><i class="cus-github"></i></a>
-					<a href="http://br.linkedin.com/in/williamseitimizuta" target="_blank"><i class="cus-linkedin"></i></a>
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-7">
+						<strong>Porque usar um sistema de controle de versão distribuído como GIT?</strong>
+					</div>
+					<div class="col-xs-1">
+						<i class="show-more cus-open"></i>
+					</div>
+				</div>
+				<div style="display: block;" class="row detail">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-12 light">
+								Veja as vantagens do uso de uma ferramenta de controle de versão 
+								distribuído em relação às outras. Vamos falar sobre a opção mais 
+								conhecida no mercado e as boas práticas de como desenvolver no 
+								dia-a-dia de um projeto. Let´s talk!
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-5 linha"></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="palestrante">
+									<strong>Palestrante:</strong> <span class="light">William Mizuta</span>
+								</p>
+								<a href="https://github.com/williammizuta" target="_blank"><i class="cus-github"></i></a>
+								<a href="http://br.linkedin.com/in/williamseitimizuta" target="_blank"><i class="cus-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-xs-1">
-				<i class="show-more cus-open"></i>
+		</div>
+		<!-- Palestrante -->
+		<div class="row">
+			<div class="col-xs-3 horario">
+				<strong>18h</strong>
+				<div class="linha"></div>
+			</div>
+			<div class="col-xs-6">
+				<strong>Encerramento</strong>
 			</div>
 		</div>
 		<!-- Palestrante Fim -->
@@ -324,7 +428,7 @@
 	</div>
 
 
-	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){$('#registerModal').modal('hide');$('#successModal').modal('show');}"></iframe>
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="try{if(submitted){$('#registerModal').modal('hide');$('#successModal').modal('show');}}catch(e){}"></iframe>
 	
 	<div class="bs-component" id="mapa">
 		<div class="fundo">
@@ -456,9 +560,9 @@
 
     <footer class="container">
       <div class="row-fluid">
-        <div class="col-md-4 text-center first">Evento organizado pelo Hotel Urbano \o/ Viajar é possível!</div>
-        <div class="col-md-4 text-center"><a href="#"><img src="images/logo-footer.png" /></a></div>
-        <div class="col-md-4 text-center last"><a href="http://www.hotelurbano.com" target="_blank"><img src="http://cdn.hotelurbano.com/images/logo/hotel-urbano.jpg"></a></div>
+        <div class="col-md-5 text-center first">Evento organizado pelo Hotel Urbano \o/ Viajar é possível!</div>
+        <div class="col-md-2 text-center"><a href="#"><img src="images/logo-footer.png" /></a></div>
+        <div class="col-md-5 text-center last"><a href="http://www.hotelurbano.com" target="_blank"><img src="http://cdn.hotelurbano.com/images/logo/hotel-urbano.jpg"></a></div>
       </div>
     </footer>
     <!-- Bootstrap core JavaScript
@@ -480,8 +584,7 @@
     $('#linkSobre, #linkEvento, #linkMapa').click(function() {
         $('html,body').animate({
             scrollTop: $('#'+$(this).attr('href').substring(1)).offset().top
-            },'slow'
-        );
+        },'slow');
         return false;
     });
 
@@ -588,9 +691,6 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 
     <script type="text/javascript" src="https://docs.google.com/static/forms/client/js/4022864555-formviewer_prd__pt_br.js"></script>
-    <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));_initFormViewer(
-        "[100,\x22#CCC\x22,[]\n]\n");
-    </script>
 
   </body>
 </html>
