@@ -3,7 +3,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Venha trocar uma ideia com os devs do Hotel Urbano e com os palestrantes convidados, fazer networking e participar do primeiro HU / Tech-Talks - Um dia que vai dar o que falar!">
+    <meta property="og:description" content="Venha trocar uma ideia com os devs do Hotel Urbano e com os palestrantes convidados, fazer networking e participar do primeiro HU / Tech-Talks - Um dia que vai dar o que falar!" />
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
@@ -43,6 +44,7 @@
             <li><a href="#evento" id="linkEvento">Evento</a></li>
             <li><a href="#mapa" id="linkMapa">Mapa</a></li>
             <li><a href="#inscricao" data-toggle="modal" data-target="#registerModal">Inscrição</a></li>
+            <li><a href="#contato" data-toggle="modal" data-target="#registerModalContato">Contato</a></li>
             
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -429,6 +431,7 @@
 
 
 	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="try{if(submitted){$('#registerModal').modal('hide');$('#successModal').modal('show');}}catch(e){}"></iframe>
+	<iframe name="hidden_iframe_contato" id="hidden_iframe_contato" style="display:none;" onload="try{if(submitted){$('#registerModalContato').modal('hide');$('#successModalContato').modal('show');}}catch(e){}"></iframe>
 	
 	<div class="bs-component" id="mapa">
 		<div class="fundo">
@@ -471,138 +474,38 @@
 	</div>
 
       <div class="modal fade" id="registerModal">
-        <div class="modal-dialog" style="width: 850px;">
+        <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <button type="button" class="close visible-lg" data-dismiss="modal" aria-hidden="true">×</button>
+              <button type="button" class="close hidden-lg" data-dismiss="modal" aria-hidden="true">×</button>
               <h1 class="modal-title"><strong>Inscrição</strong></h1>
 			  <p class="font18">O Evento oferece 100 vagas na plateia. Aproveite que você está aqui e inscreva-se!</p>
             </div>
             <div class="modal-body">
-              <!--<form action="https://docs.google.com/a/hotelurbano.com.br/forms/d/1MlVxL204Yoww86fU0JjKfYPZyuQ_GCkf3OlOl9XLlTQ/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;" class="" >-->
 		<form action="http://ec2-54-232-203-172.sa-east-1.compute.amazonaws.com/techtalks.php" target="hidden_iframe" id="ss-form" onsubmit="submitted=true;" method="post">
 
                 <div class="row">
                   <div class="col-xs-12 form-group">
-					<label class="col-md-3">Nome Completo</label>
-                    <input type="text" name="nome" value="" class="form-control col-md-9" id="entry_1721024040" dir="auto" title="" />
-                    <span class="form-control-feedback"></span>
-                  </div>
-                </div>
-				
-                      <!--				
-				<div class="row">
-					<ul class="profissao col-xs-4 form-group">
-						<li class="qualProfissao estudante">
-							<input type="radio" name="entry.93769113" value="Estudante" id="group_93769113_1" role="checkbox" class="ss-q-checkbox">
-							<label><span>Estudante</span></label>
-						</li>
-						<li class="qualProfissao profissional">
-							<input type="radio" name="entry.93769113" value="Profissional" id="group_93769113_2" role="checkbox" class="ss-q-checkbox">
-							<label><span>Profissional</span></label>
-						</li>
-					</ul>
-				
-				
-
-					  <div class="col-xs-2 form-group">
-                        <label class="estud-prof">
-                          <input type="radio" name="entry.93769113" value="Estudante" id="group_93769113_1" role="checkbox" class="ss-q-checkbox">
-                          Estudante
-                        </label>
-                      </div>
-                      <div class="col-xs-10 form-group">
-                        <label>
-                          <input type="radio" name="entry.93769113" value="Profissional" id="group_93769113_2" role="checkbox" class="ss-q-checkbox">
-                          Profissional
-                        </label>
-                      </div>
-                </div>
-				<div class="row">
-                    <div class="col-xs-6 form-group">
-					  <label class="col-md-1">RG</label>
-                      <input type="text" name="entry.184509898" value="" class="form-control col-md-11 radioButton" id="entry_184509898" dir="auto" title="" />
-                    </div>
-                    <div class="col-xs-6 form-group">
-					  <label class="col-md-6">Data de Nascimento</label>
-                      <input type="text" name="entry.950994615" value="" class="form-control col-md-6 radioButton" id="entry_950994615" dir="auto" title="" />
-                    </div>
-                </div>->
--->
-                <div class="row">
-                  <div class="col-xs-12 form-group">
-					<label class="col-md-1">Email</label>
-                    <input type="text" name="email" value="" class="form-control col-md-11" id="entry_1601584164" dir="auto" title="" />
+					<label class="col-md-3" for="nome">Nome Completo</label>
+                    <input type="text" name="nome" value="" class="form-control col-md-9" id="nome" dir="auto" title="" />
                     <span class="form-control-feedback"></span>
                   </div>
                 </div>
 
-                <!--<div class="row">
+                <div class="row">
                   <div class="col-xs-12 form-group">
-				    <label class="col-md-4">Empresa onde estuda / trabalha</label>
-                    <input type="text" name="entry.1141575499" value="" class="form-control col-md-8" id="entry_1141575499" dir="auto" title="" />
+					<label class="col-md-1" for="email">Email</label>
+                    <input type="text" name="email" value="" class="form-control col-md-11" id="email" dir="auto" title="" />
+                    <span class="form-control-feedback"></span>
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-xs-8 form-group">
-					<label class="col-md-2">Cidade</label>
-                    <select name="entry.198719820" class="cidade form-control col-md-10" id="entry_198719820" dir="auto" title="">
-						<option value="4499">Belém</option>
-						<option value="2700">Belo Horizonte</option>
-						<option value="4070">Bonito</option>
-						<option value="1724">Brasilia</option>
-						<option value="8781">Campinas</option>
-						<option value="4079">Campo Grande</option>
-						<option value="4282">Cuiabá</option>
-						<option value="5915">Curitiba</option>
-						<option value="8213">Florianópolis</option>
-						<option value="1320">Fortaleza</option>
-						<option value="2120">Goiânia</option>
-						<option value="4895">João Pessoa</option>
-						<option value="107">Maceió</option>
-						<option value="240">Manaus</option>
-						<option value="7039">Natal</option>
-						<option value="9653">Palmas</option>
-						<option value="7777">Porto Alegre</option>
-						<option value="7170">Porto Velho</option>
-						<option value="5333">Recife</option>
-						<option value="16">Rio Branco</option>
-						<option value="6861">Rio de Janeiro</option>
-						<option value="981">Salvador</option>
-						<option value="2533">Sao Luis</option>
-						<option value="9422">São Paulo</option>
-					</select>
-                  </div>
-                  <div class="col-xs-4 form-group">
-					<label class="col-md-3">Estado</label>
-                    <select name="entry.822721718" class="estado form-control valid col-md-9" id="entry_822721718" dir="auto" title="">
-						<option>AC</option>
-						<option>AL</option>
-						<option>AP</option>
-						<option>AM</option>
-						<option>BA</option>
-						
-						<option>CE</option>
-						<option>DF</option>
-						<option>ES</option>
-						<option>GO</option>
-						<option>MA</option>
-						
-						<option>MT</option>
-						<option>MS</option>
-						<option>MG</option>
-						<option>PA</option>
-						<option>PB</option>
-					</select>
-                  </div>
-                </div>-->
 
                 <div class="row">
                   <div class="col-xs-12">
                   <div class="form-group">
-					<label class="col-md-3">Telefone para contato</label>
-                    <input type="text" name="telefone" value="" class="form-control col-md-9" id="entry_534361666" dir="auto"  title="" />
+					<label class="col-md-3" for="telefone">Telefone para contato</label>
+                    <input type="text" name="telefone" value="" class="form-control col-md-9" id="telefone" dir="auto"  title="" />
                   </div>
                   </div>
                 </div>                  
@@ -623,6 +526,96 @@
             <div class="modal-footer">
 				<p class="text-center">
 					<button type="button" class="btn btn-warning light" onclick="submitForm();">Inscreva-se já!</button>
+				</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="successModalContato">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+
+		  
+		  <div class="modal-body">
+			<h3>Contado registrado com sucesso.</h3>
+			<div class="row">
+				<div class="col-xs-12">
+					Aguarde que retornaremos o contato
+				</div>
+			</div>
+		  </div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" onclick="clearForm();" class="btn btn-success" data-dismiss="modal">OK</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+      <div class="modal fade" id="registerModalContato">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close visible-lg" data-dismiss="modal" aria-hidden="true">×</button>
+              <button type="button" class="close hidden-lg" data-dismiss="modal" aria-hidden="true">×</button>
+              <h1 class="modal-title"><strong>Contato</strong></h1>
+			  <p class="font18">Registre aqui as suas dúvidas</p>
+            </div>
+            <div class="modal-body">
+              <!--<form action="https://docs.google.com/a/hotelurbano.com.br/forms/d/1MlVxL204Yoww86fU0JjKfYPZyuQ_GCkf3OlOl9XLlTQ/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;" class="" >-->
+		<form action="http://ec2-54-232-203-172.sa-east-1.compute.amazonaws.com/techtalks-contato.php" target="hidden_iframe_contato" id="ss-form_contato" onsubmit="submitted=true;" method="post">
+
+                <div class="row">
+                  <div class="col-xs-12 form-group">
+					<label class="col-md-3" for="contato-nome">Nome Completo</label>
+                    <input type="text" name="nome" value="" class="form-control col-md-9" id="contato-nome" dir="auto" title="" placeholder="Nome completo" />
+                    <span class="form-control-feedback"></span>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 form-group">
+					<label class="col-md-1" for="contato-email">Email</label>
+                    <input type="text" name="email" value="" class="form-control col-md-11" id="contato-email" dir="auto" placeholder="email" />
+                    <span class="form-control-feedback"></span>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 form-group">
+                  <div class="form-group">
+					<label class="col-md-3" for="contato-telefone">Telefone para contato</label>
+                    <input type="text" name="telefone" value="" class="form-control col-md-9" id="contato-telefone" dir="auto" placeholder="(xx) xxxx-xxxx" />
+                  </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                  <div class="form-group">
+					<label class="col-md-3" for="contato-descricao">Descrição</label>
+                    <textarea name="descricao" value="" class="form-control col-md-12" id="contato-descricao" dir="auto"  title="" /></textarea>
+                  </div>
+                  </div>
+                </div>
+
+                  
+                <input type="hidden" name="draftResponse" value="[,,&quot;2853297978061666199&quot;]" />
+                <input type="hidden" name="pageHistory" value="0" />
+                <input type="hidden" name="fromEmail" value="false" />
+
+                <input type="hidden" name="fbzx" value="2853297978061666199" />
+                <input type="submit" name="submit" value="Enviar" id="ss-submit-contato" style="display:none;" />
+
+            </form>
+
+
+
+            </div>
+            <div class="modal-footer">
+				<p class="text-center">
+					<button type="button" class="btn btn-warning light" onclick="submitFormContato();">Registre seu contato!</button>
 				</p>
             </div>
           </div>
@@ -662,9 +655,6 @@
       var init = function(){
         $('#entry_950994615').mask('99/99/9999');
       }
-
-      var nameInput = $("#entry_1721024040");
-      var emailInput = $("#entry_1601584164");
 
       var clearFormItem = function(input){
         var parent = input.parent();
@@ -728,14 +718,32 @@
       var validateForm = function(){
         var valid = true;
  
-        if (!isRequiredFieldValid(nameInput)){
+        if (!isRequiredFieldValid($('#nome'))){
           valid = false;
         }
 
-        if (!isRequiredFieldValid(emailInput)){
+        if (!isRequiredFieldValid($('#email'))){
           valid = false;
         }else{
-          if (!validateEmailField(emailInput)){
+          if (!validateEmailField($('#email'))){
+            valid = false;
+          }
+        }
+        
+        return valid;
+      }
+
+      var validateFormContato = function(){
+        var valid = true;
+ 
+        if (!isRequiredFieldValid($('#contato-nome'))){
+          valid = false;
+        }
+
+        if (!isRequiredFieldValid($('#contato-email'))){
+          valid = false;
+        }else{
+          if (!validateEmailField($('#contato-email'))){
             valid = false;
           }
         }
@@ -746,6 +754,12 @@
       var submitForm = function(){
         if (validateForm()){
           $('#ss-submit').click();
+        }
+      }
+
+      var submitFormContato = function(){
+        if (validateFormContato()){
+          $('#ss-submit-contato').click();
         }
       }
 

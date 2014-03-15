@@ -163,12 +163,19 @@ footer .row-fluid>div.last{margin-top: 25px;}
   width: 20px;
 }
 */
+
+.modal-dialog {
+    margin: 30px auto;
+    max-width: 850px;
+    width: auto;
+}
+
 .modal-content ul.profissao input:focus + label {outline: 2px dotted #21b4d0;}
 .modal-content ul.profissao input:checked + label {outline: 4px solid #21b4d0;}
 
 .modal-body{margin-top: 40px;}
 .modal-body label{font-weight: 300; float: left; padding: 0;}
-.modal-body input.form-control{float: left; background: #efeeed; border: none; box-shadow: none; border-radius: 0; font-weight: 300; font-size: 18px;}
+.modal-body input.form-control, .modal-body textarea.form-control{float: left; background: #efeeed; border: none; box-shadow: none; border-radius: 0; font-weight: 300; font-size: 18px;}
 .modal-body select{
 	-moz-appearance: none;
     background: url(../images/seta-select.png) no-repeat scroll 97% 50% #efeeed;
@@ -189,4 +196,7 @@ footer .row-fluid>div.last{margin-top: 25px;}
 .form-control:focus{box-shadow: none;}
 .modal-footer{border-top: none;}
 
-.close{font-weight: 100; font-size: 150px; color: #fff; position: absolute; top: -50px; right: -87px; opacity: 1; text-shadow: none;}
+.visible-lg .close{font-weight: 100; font-size: 150px; color: #fff; position: absolute; top: -50px; right: -87px; opacity: 1; text-shadow: none;}
+.hidden-lg .close{font-size: 50px; color: #fff;}
+
+.btn{white-space: normal;}
