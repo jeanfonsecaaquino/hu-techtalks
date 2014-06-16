@@ -14,6 +14,14 @@
   padding: 14px;
 }
 
+div.vertical-line{
+ background-color:#EFEEEC;
+ width: 2px;
+ height: 100px;
+ float: left;
+ margin:15px;
+}
+
 .pagination-centered {
   text-align: center;
 }

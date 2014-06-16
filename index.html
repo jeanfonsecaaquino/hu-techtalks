@@ -24,7 +24,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body onload="$('#onLoadModal').modal('show')">
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -531,7 +531,69 @@
           </div>
         </div>
       </div>
+      
+      
+      <!--  Modificações -->
+      
+      	<div class="modal fade" id="onLoadModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close visible-lg" aria-hidden="true" data-dismiss="modal" type="button">×</button>
+		           		<div>
+			           		<img src="images/icone-relogio.png" style="float:left; margin:0 1em 1em 0">
+		           		</div>
+		           		<span class="text-warning">
+		           			<h1>
+		           				Começou a <strong>contagem regressiva</strong> para o próximo <strong>HU tech-talks	.</strong>
+		           			</h1>
+			  			</span>
+            </div>
+            <div class="modal-body">
+            <div>
+	            <div style="float: left; font-size: 17px;">
+	            	<br>
+	            	Dia <strong>26 de Julho</strong> esperamos você de novo. 
+	            	<br>
+	            	Em breve começam as inscrições. <strong>Fique ligado!</strong>
+	            </div>
+	            <div class="vertical-line"></div>
+	            <br/>
+            	<div style="font-size: 15px; font-style: italic;">
+            		Query receber informações sobre o HU tech-talks?
+            	</div>
+            </div>
 
+			<div class="row">
+				<div class="col-xs-12 form-group">
+					<label class="col-md-3" for="onLoadModalNomeCompleto">Nome Completo</label> <input
+						id="onLoadModalNomeCompleto" class="form-control col-md-9" type="text" title=""
+						dir="auto" value="" name="onLoadModalNomeCompleto"> <span
+						class="form-control-feedback"></span>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 form-group">
+					<label class="col-md-1" for="onLoadModalEmail">Email</label> <input
+						id="onLoadModalEmail" class="form-control col-md-11" type="text" title=""
+						dir="auto" value="" name="onLoadModalEmail"> <span
+						class="form-control-feedback"></span>
+				</div>
+			</div>
+
+		    </div>
+            <div class="modal-footer">
+				<p class="text-center">
+				<button class="btn btn-warning light" onclick="submitForm();" type="button">Enviar</button>
+				</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+   	  <!-- Modificacoes -->   
+      
 	<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="successModalContato">
 	  <div class="modal-dialog">
 		<div class="modal-content">
