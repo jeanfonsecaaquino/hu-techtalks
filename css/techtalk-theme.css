@@ -22,6 +22,10 @@ div.vertical-line{
  margin:15px;
 }
 
+@media (max-width: 530px) {
+   div.vertical-line{width: 0px;height: 100px;}
+}
+
 .pagination-centered {
   text-align: center;
 }
